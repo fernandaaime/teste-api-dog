@@ -1,6 +1,6 @@
 # Teste API - Dog API
 
-Automacao de testes de API para a Dog API utilizando RestAssured + TestNG + Java.
+Automacao de testes de API para a Dog API utilizando RestAssured + TestNG + Allure Reports.
 
 ## Endpoints Testados
 
@@ -13,6 +13,7 @@ Automacao de testes de API para a Dog API utilizando RestAssured + TestNG + Java
 - Java 17
 - RestAssured 5.4.0
 - TestNG 7.9.0
+- Allure Reports 2.25.0
 - Maven 3.9.x
 
 ## Pre-requisitos
@@ -23,4 +24,23 @@ Automacao de testes de API para a Dog API utilizando RestAssured + TestNG + Java
 ## Como executar
 ```bash
 mvn test
+```
+
+## Como gerar o relatorio Allure
+```bash
+mvn allure:serve
+```
+
+O relatorio sera aberto automaticamente no navegador com detalhes de cada teste, incluindo request, response e status.
+
+## Estrutura do projeto
+```
+teste-api-dog/
+├── pom.xml
+└── src/
+    └── test/
+        └── java/
+            └── com/
+                └── dog/
+                    └── DogApiTest.java
 ```
